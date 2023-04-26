@@ -73,9 +73,18 @@ public class Person {
         Person person = (Person) o;
         return age == person.age && Objects.equals(name, person.name) && Objects.equals(occupation, person.occupation);
     }
-
-    /*@Override
+    @Override
     public int hashCode() {
-        return Objects.hash(id, name, age, occupation);
-    }*/
+        return Objects.hash(name, age, occupation);
+    }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", age=" + age +
+                ", occupation='" + occupation + '\'' +
+                '}';
+    }
 }

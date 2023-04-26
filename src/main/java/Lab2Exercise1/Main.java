@@ -2,6 +2,9 @@ package Lab2Exercise1;
 
 public class Main {
     public static void main(String[] args){
+        Person p1 = new Person(23, "Fernando Herrera",29, "Data Science");
+
+        PersonFileWriter.writePerson(p1);
 
         //Person p1 = new Person(23, "Fernando Herrera",-24, "Data Science");
 
